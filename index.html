@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todo1</title>
+    <link rel="stylesheet" href="./bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <div class="container justify-content-center"">
+        <div class="row mt-3 justify-content-center">
+            <div class="col-md-8">
+                <div class="card card-body" id="blue-container">
+                    <legend>Create todo</legend>
+                    <hr>
+                    <div class="form-group">
+                        <label for="title">title</label>
+                        <input type="text" placeholder="enter content" id="title" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="body">title</label>
+                        <textarea name="" id="body" class="form-control" placeholder="enter content"></textarea>
+                    </div><!--form-group2-->
+                    <button class="btn btn-primary mt-2" id="addtodo-btn">add todo</button>
+                </div><!--card card-body-->
+            </div><!--col-md-8-->
+        </div><!--row-->
+        <div class="row mt-3 justify-content-center" style="color: orange !important">
+            <div class="col-md-8">
+                <div class="card card-body" id="yellow-container" style="display: none;">
+                    <legend>update todo</legend>
+                    <hr>
+                    <div class="form-group">
+                        <label for="title">title</label>
+                        <input type="text" placeholder="enter content" id="edit-title" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="body">title</label>
+                        <textarea name="" id="edit-body" class="form-control" placeholder="enter content"></textarea>
+                    </div><!--form-group2-->
+                    <button class="btn btn-warning mt-2" id="update-todo">update todo</button>
+                </div><!--card card-body-->
+            </div><!--col-md-8-->
+        </div><!--row-->
+        <div id="todo-container">
+            <div class="row mt-2 justify-content-center">
+                <div class="col-md-8">
+                    
+                </div><!--col-md-8-->
+            </div><!--row-->
+        </div><!--todo-container-->
+    </div><!--container-->
+    <button id="output" class="output btn btn-primary" style="position: absolute; top:0; right:0;">
+        output
+    </button>
+    <button id="sh-create" class="sh-create btn btn-primary" style="position: absolute; top:50px; right:0; padding-left: 15px;">
+        create
+    </button>
+    <button id="sh-update" class="sh-update btn btn-warning" style="position: absolute; top:100px; right:0;">
+        update
+    </button>
+<script src="./js/main.js"></script>
+</body>
+</html>
